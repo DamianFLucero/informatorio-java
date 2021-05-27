@@ -21,32 +21,29 @@ public class Ejercicio7c{
         int dia = scan.nextInt();
         scan.close();
         clearScreen();
-        diaSemana(dia);
+        String respuestaDia = diaSemana(dia);
+        System.out.println(respuestaDia);
     }
 
-    private static void diaSemana(int dia) {
+    private static String diaSemana(int dia) {
+        //Devuelve el día
         switch (dia) {
             case 1:
-            System.out.println("Domingo");
-            break;
+                return "Domingo";
             case 2:
-            System.out.println("Lunes");
-            break;
+                return "Lunes";
             case 3:
-            System.out.println("Martes");
-            break;
+                return "Martes";
             case 4:
-            System.out.println("Miércoles");
-            break;
+                return "Miércoles";
             case 5:
-            System.out.println("Jueves");
-            break;
+                return "Jueves";
             case 6:
-            System.out.println("Viernes");
-            break;
+                return "Viernes";
             case 7:
-            System.out.println("Sábado");
-            break;
+                return "Sábado";
+            default:
+                return "Error";
         }
     }
 }
