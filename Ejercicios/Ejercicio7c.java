@@ -1,26 +1,30 @@
 import java.util.Scanner;
-/*Realizar un programa que dado un número de entrada entre 1 a 7, 
-nos devuelva el dia de la semana de la siguiente forma:
 
-Número   Dia
-1        Domingo
-2        Lunes
-3        Martes
-4        Miercoles
-5        Jueves
-6        Viernes
-7        Sabado */
+/*En base a los ejercicios 2 al 4, modificar los programas para que 
+separe la lógica de negocio (cálculo aritmético, procesamiento, etc) en funciones. */
 
 
-
-public class Ejercicio4 {
+public class Ejercicio7c{
     
-    public static void main (String[] args){
+    private static void clearScreen() {
+        //Limpia consola
+        System.out.print("\033[H\033[2J");
+        System.out.flush();     
+    }
+
+    private static String descripcion = "Ingrese número para saber su día de la semana:";
+        //Consigna del sistema
+    public static void main (String[] args) {
+        //Ingreso de nota3
+        System.out.println(descripcion);
         Scanner scan = new Scanner(System.in);
-        System.out.println("Ingrese número para saber su día de la semana:");
         int dia = scan.nextInt();
         scan.close();
+        clearScreen();
+        diaSemana(dia);
+    }
 
+    private static void diaSemana(int dia) {
         switch (dia) {
             case 1:
             System.out.println("Domingo");

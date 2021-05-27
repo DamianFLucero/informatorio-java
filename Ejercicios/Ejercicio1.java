@@ -1,5 +1,5 @@
-//Realizar un programa que realice la impresión por consola del siguiente mensaje:
-//Hola Informatorio 2021!!
+/*Realizar un programa que realice la impresión por consola del siguiente mensaje:
+Hola Informatorio 2021!!*/
 
 public class Ejercicio1 {
 

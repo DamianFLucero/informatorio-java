@@ -1,7 +1,7 @@
 import java.util.*;
-//Debemos realizar un programa que nos realizará una pregunta 
-//si queremos realizar una operación dada o si deseamos salir/terminar el programa.
-//Utilizaremos en este caso una simple operación que nos pide un número y luego lo imprime.
+/*Debemos realizar un programa que nos realizará una pregunta 
+si queremos realizar una operación dada o si deseamos salir/terminar el programa.
+Utilizaremos en este caso una simple operación que nos pide un número y luego lo imprime.*/
 
 
 public class Ejercicio6 {
@@ -19,7 +19,7 @@ public class Ejercicio6 {
             int numero = scan.nextInt();
             clearScreen();
             System.out.println("El numero ingresado es: "+numero);
-            System.out.println("Para continuar presione 1, para salir presione 2.");
+            System.out.println("Para continuar ingrese 1, para salir ingrese 2.");
             salida = scan.nextInt();
             clearScreen();
         }
