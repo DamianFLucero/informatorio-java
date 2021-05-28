@@ -1,3 +1,4 @@
+package DesarrolloDeProblemas;
 import java.util.*;
 /*Debemos realizar un programa que nos realizará una pregunta 
 si queremos realizar una operación dada o si deseamos salir/terminar el programa.

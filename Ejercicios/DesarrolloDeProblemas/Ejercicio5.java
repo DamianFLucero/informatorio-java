@@ -1,3 +1,4 @@
+package DesarrolloDeProblemas;
 import java.util.Scanner;
 /*Desarrollar un programa que dado un número entero ingresado, 
 nos retorne los valores de ese número multiplicado por 1, 2, 3, … y 10.*/

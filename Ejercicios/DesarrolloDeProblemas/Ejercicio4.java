@@ -1,3 +1,4 @@
+package DesarrolloDeProblemas;
 import java.util.Scanner;
 /*Realizar un programa que dado un número de entrada entre 1 a 7, 
 nos devuelva el dia de la semana de la siguiente forma:

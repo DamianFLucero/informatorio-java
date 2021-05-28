@@ -1,3 +1,4 @@
+package DesarrolloDeProblemas;
 import java.util.*;
 /*Tendremos un sistema que debe clasificar el resultado de una evaluación. 
 Como dato de entrada tendremos un entero y como resultado un String de la 
