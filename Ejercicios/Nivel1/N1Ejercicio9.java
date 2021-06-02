@@ -16,7 +16,8 @@ public class N1Ejercicio9 {
         int contador = 0;
         for (int i=0;i<texto.length();i++){
             char caracter = texto.charAt(i);
-            if (caracter==letraCh) {
+            char minuscula = Character.toLowerCase(caracter);
+            if (minuscula==letraCh) {
                 contador++;
             }
         }

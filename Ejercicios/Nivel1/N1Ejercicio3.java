@@ -3,6 +3,7 @@ import java.util.Scanner;
 /*Confeccionar un programa que dado un número entero como dato de entrada
 imprima la secuencia de números (incrementos de 1) de la siguiente forma:
 (Imput 5):
+
 1
 1 2
 1 2 3
@@ -17,10 +18,10 @@ public class N1Ejercicio3 {
         int filas= scan.nextInt();
         scan.close();
         
-        for (int i=1; i<=filas; i++){
+        for (int f=1; f<=filas; f++){
             System.out.println();
-            for (int e=1; e<=i; e++){
-                System.out.print(" "+e);
+            for (int c=1; c<=f; c++){
+                System.out.print(" "+c);
             }
         }
     }
