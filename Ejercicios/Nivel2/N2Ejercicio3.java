@@ -20,38 +20,35 @@ public class N2Ejercicio3 {
     }
 
     System.out.print("Baraja: ");
-    for (int i=0;i<baraja.size();i++){
+    for (int i=0;i<baraja.size();i++) {
         System.out.print(" "+baraja.get(i));
         }
 
-    String continuar;
-    Scanner enter = new Scanner(System.in);
-    System.out.println(" ");
-    System.out.println("Para ver la baraja al inverso presione 'Enter'");
-    try
-        {
+        System.out.println(" ");
+        //System.out.println("Para ver la baraja al inverso presione 'Enter'");
+        Scanner enter = new Scanner(System.in);
+        String continuar;
+    try {
+        System.out.println("Para ver la baraja al inverso presione 'Enter'");
         continuar = enter.nextLine();
         System.out.print("Baraja inversa: ");
-        for (int i = baraja.size()-1;i>=0;i--){
+        for (int i = baraja.size()-1;i>=0;i--) {
             System.out.print(" "+baraja.get(i));
-            }
+        }
         System.out.println(" ");
         System.out.println("Para mezclar la baraja presione 'Enter'");
         }   
-    catch(Exception e){
-        
-        }
+    catch(Exception e) { }
 
-    try
-    {
+    try {
         continuar = enter.nextLine();
         Collections.shuffle(baraja);
         System.out.print("Baraja mezclada: ");
         for (int i=0;i<baraja.size();i++){
             System.out.print(" "+baraja.get(i));
-            }
+        }
+    enter.close();
     }   
-    catch(Exception e){
-        }  
+    catch(Exception e) { }  
     }
 }

@@ -3,7 +3,7 @@ import java.util.*;
 /*Crear un ArrayList y cargarlo con tus ciudades favoritas de Argentina, luego
 imprimir por pantalla el ranking*/
 
-public class N1Ejercicio1 {
+public class N2Ejercicio1 {
 
     public static void clearScreen() {
         System.out.print("\033[H\033[2J");
