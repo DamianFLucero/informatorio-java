@@ -17,11 +17,15 @@ public class UtilEmpleados {
         catch(Exception e) { }  
     }
 
-    public static void porApellido (List<ClaseEmpleados> listaEmpleados, String a) {
+    public static void porApellido (List<ClaseEmpleados> listaEmpleados) {
 
         limpiarConsola();
-        String mayus = a.toUpperCase();
+        System.out.print("Para buscar empleado por apellido:\nIngrese letra: ");
+        Scanner scan = new Scanner(System.in);
+        String letraA = scan.nextLine();
+        String mayus = letraA.toUpperCase();
         char carac = mayus.charAt(0);
+        limpiarConsola();
         System.out.print("Empleados de apellido comenzado con '"+ mayus + "':\n\n");
         for(int i = 0; i < listaEmpleados.size(); i++) {
             String apellido = listaEmpleados.get(i).getApellido();
@@ -35,11 +39,15 @@ public class UtilEmpleados {
         enterContinuar();
     }
 
-    public static void porNombre (List<ClaseEmpleados> listaEmpleados, String n) {
+    public static void porNombre (List<ClaseEmpleados> listaEmpleados) {
 
         limpiarConsola();
-        String mayus = n.toUpperCase();
+        System.out.print("Para buscar empleado por nombre:\nIngrese letra: ");
+        Scanner scan = new Scanner(System.in);
+        String letraN = scan.nextLine();
+        String mayus = letraN.toUpperCase();
         char carac = mayus.charAt(0);
+        limpiarConsola();
         System.out.print("Empleados de nombre comenzado con '"+ mayus + "':\n\n");
         for(int i = 0; i < listaEmpleados.size(); i++) {
             String nombre = listaEmpleados.get(i).getNombre();

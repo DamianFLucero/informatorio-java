@@ -13,8 +13,16 @@ public class Ejercicio5Main {
         System.out.flush();     
     }
 
+    public static void enterContinuar() { 
+        System.out.println("\nEnter para continuar");
+        try {
+            System.in.read();
+        }  
+        catch(Exception e) { }  
+    }
     public static void main(String args[]) throws IOException {
         
+        Scanner scan = new Scanner(System.in);
         boolean salir = false;
         while (!salir) {
             limpiarConsola();
@@ -26,24 +34,17 @@ public class Ejercicio5Main {
             System.out.print("5 - Para ver empleados ordenados alfabéticamente\n");
             System.out.print("6 - Para salir\n");
             System.out.print("\nOpción: ");
-            Scanner scan = new Scanner(System.in);
             int opcion = scan.nextInt();
             limpiarConsola();
             
             switch (opcion) {
                 case 1:
                     //Probar con "L"
-                    System.out.print("Para buscar empleado por apellido:\nIngrese letra: ");
-                    Scanner scan1 = new Scanner(System.in);
-                    String letraA = scan1.nextLine();
-                    UtilEmpleados.porApellido(definirEmpleados(), letraA);
+                    UtilEmpleados.porApellido(definirEmpleados());
                     break;
                 case 2:
                     //Probar con "C"
-                    System.out.print("Para buscar empleado por nombre:\nIngrese letra: ");
-                    Scanner scan2 = new Scanner(System.in);
-                    String letraN = scan2.nextLine();
-                    UtilEmpleados.porNombre(definirEmpleados(), letraN);
+                    UtilEmpleados.porNombre(definirEmpleados());
                     break;
                 case 3:
                     UtilEmpleados.mayorMenorEdad(definirEmpleados());
@@ -59,9 +60,10 @@ public class Ejercicio5Main {
                     break;
                 default:
                     System.out.println("Error");
-                scan.close();
+                    enterContinuar();
             }
         }
+    scan.close();
     }
 
     public static List<ClaseEmpleados> definirEmpleados() throws IOException {
