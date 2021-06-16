@@ -3,13 +3,13 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 
-public class Empleados {
+public class ClaseEmpleados {
     private String nombre;
     private String apellido;
     private LocalDate fechaNac;
     private float sueldo;
 
-    public Empleados(String nombre, String apellido, String fechaNac, String sueldo) {
+    public ClaseEmpleados(String nombre, String apellido, String fechaNac, String sueldo) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.fechaNac = LocalDate.parse(fechaNac, DateTimeFormatter.ofPattern("dd-MM-yyyy"));
@@ -51,8 +51,6 @@ public class Empleados {
 
     @Override
     public String toString() {
-        return "Nombre: " + nombre + " " + apellido 
-        + "\nFecha de nac: " + fechaNac.toString() 
-        + "\nSueldo: " + sueldo + "\n";
+        return apellido + " " + nombre + " - " + fechaNac.toString() + " - $" + sueldo;
     }
 }

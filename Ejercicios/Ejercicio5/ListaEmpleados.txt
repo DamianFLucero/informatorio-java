@@ -1,2 +1,4 @@
-Damian,Lucero,23-06-1991,35235.65
+Dario,Ledesma,23-06-1991,35235.65
 Carolina,Marquez,22-09-1995,42658.86
+Hugo,Luque,18-05-1987,31349.27
+Carlos,Vargas,09-02-1993,22425.75
